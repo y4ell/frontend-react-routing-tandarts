@@ -25,7 +25,7 @@ de webpagina.
 Onderstaande stappen beschrijven op globale wijze wat er moet gebeuren. Schroom niet om in EdHub te spieken naar syntax:
 
 1. Installeer React Router Dom in het project;
-2. Wikkel het buitenste React Router element om de applicatie in `index.jsx`;
+2. Wikkel het buitenste React Router element om de applicatie in `main.jsx`;
 3. Implementeer routing voor alle vier de pagina's in `App.jsx`:
     - De homepagina op `/`
     - De appointmentspagina op `/afspraken`
