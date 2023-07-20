@@ -18,15 +18,15 @@ Wanneer dit klaar is, kun je de applicatie starten met behulp van:
 `npm run dev`
 
 ... of gebruik de WebStorm knop (npm start). Open http://localhost:5173 om de pagina in de browser te bekijken. Begin met
-het maken van wijzigingen in `src/App.js`: elke keer als je een bestand opslaat, zullen de wijzigingen te zien zijn op
+het maken van wijzigingen in `src/App.jsx`: elke keer als je een bestand opslaat, zullen de wijzigingen te zien zijn op
 de webpagina.
 
 ## Opdrachtbeschrijving
 Onderstaande stappen beschrijven op globale wijze wat er moet gebeuren. Schroom niet om in EdHub te spieken naar syntax:
 
 1. Installeer React Router Dom in het project;
-2. Wikkel het buitenste React Router element om de applicatie in `index.js`;
-3. Implementeer routing voor alle vier de pagina's in `App.js`:
+2. Wikkel het buitenste React Router element om de applicatie in `index.jsx`;
+3. Implementeer routing voor alle vier de pagina's in `App.jsx`:
     - De homepagina op `/`
     - De appointmentspagina op `/afspraken`
     - De cavitiespagina op `/gaatjes`
