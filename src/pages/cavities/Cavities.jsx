@@ -2,9 +2,34 @@ import React from 'react';
 import Header from '../../components/header/Header';
 import gaatjes from '../../assets/dentist.svg';
 import './Cavities.css';
+import { useNavigate } from "react-router-dom";
 
+
+// import { useNavigate } from "react-router-dom";
+//
+// function Login() {
+//     const navigate = useNavigate(); // We roepen de hook eenmalig aan;
+//
+//     function onFormSubmit(e) {
+//         e.preventDefault();
+//         navigate("/profile"); // <--- We kunnen navigate-methode oneindig vaak gebruiken!
+//     }
+//
+//     return (
+//         {/* formulier... */ }
+//     );
+// }
 function Cavities() {
-  return (
+
+        const navigate = useNavigate();
+
+        function onButtonClick() {
+            console.log("We gaan direct door naar de afspraken pagina!")
+            navigate("/afspraken")
+        }
+
+
+        return (
     <main className="page-container">
       <Header icon={gaatjes} title="Gaatjes" />
       <p>
@@ -12,9 +37,11 @@ function Cavities() {
         Amet consequuntur deleniti distinctio ea eveniet id, labore magni neque obcaecati praesentium quibusdam quidem, quod, repellat sequi ut.
         Blanditiis, reiciendis.
       </p>
-      <button type="button" className="appointment-button">
+
+      <button type="button" onClick={onButtonClick} className="appointment-button">
         Maak direct uw afspraak!
       </button>
+
       <p className="content-container-col3">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi corporis cumque exercitationem minus optio, perferendis quos sunt.
         Accusamus ad aliquid autem consequatur, eos ex excepturi illum impedit maiores molestias nam quod rem, voluptatibus. Mollitia, quidem voluptas?

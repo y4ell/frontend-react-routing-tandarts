@@ -30,3 +30,11 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
+
+.default-nav-link {
+    border-bottom: 1px transparent;
+}
+
+.active-nav-link {
+    text-decoration: underline;
+}
